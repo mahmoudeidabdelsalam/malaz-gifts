@@ -44,9 +44,20 @@ export function ContactInfo() {
                 <span className="block font-cairo text-sm font-bold text-ink">
                   {item.title}
                 </span>
-                <span className="mt-1 block text-sm text-body-muted">
-                  {item.value}
-                </span>
+                {"href" in item ? (
+                  <a
+                    className="mt-1 block text-sm text-body-muted underline decoration-border underline-offset-2 hover:text-plum"
+                    href={item.href}
+                    rel="noopener noreferrer"
+                    target="_blank"
+                  >
+                    {item.value}
+                  </a>
+                ) : (
+                  <span className="mt-1 block text-sm text-body-muted">
+                    {item.value}
+                  </span>
+                )}
               </span>
             </li>
           ))}

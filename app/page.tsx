@@ -4,6 +4,8 @@ import { FeaturedProducts } from "@/components/home/FeaturedProducts";
 import { GroupCta } from "@/components/home/GroupCta";
 import { Hero } from "@/components/home/Hero";
 import { Occasions } from "@/components/home/Occasions";
+import { MalazStory } from "@/components/home/MalazStory";
+import { SchoolActivities } from "@/components/home/SchoolActivities";
 import { TrustStrip } from "@/components/home/TrustStrip";
 import { WhyMalaz } from "@/components/home/WhyMalaz";
 import { site } from "@/lib/site";
@@ -37,6 +39,8 @@ export default function Home() {
       <Hero />
       <TrustStrip />
       <Collections />
+      <SchoolActivities />
+      <MalazStory />
       <FeaturedProducts />
       <Occasions />
       <WhyMalaz />

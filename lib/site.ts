@@ -1,11 +1,12 @@
 const whatsappNumber = process.env.NEXT_PUBLIC_WHATSAPP_NUMBER ?? "";
-const phoneDisplay = "[رقم الهاتف]";
+const phoneDisplay = "ابداء الشات";
 const email = "digital.board.pro@gmail.com";
 const hours = "من 10 صباحًا حتى 10 مساءً، طوال أيام الأسبوع";
 const links = {
   home: "/",
   contact: "/contact/",
   collections: "/#collections",
+  schoolGifts: "/#school-gifts",
   occasions: "/#occasions",
   why: "/#why",
 };
@@ -53,8 +54,8 @@ export const site = {
   name: "ملاذ للهدايا",
   nameEn: "Malaz Gifts",
   description:
-    "اكتشفي بوكسات وهدايا ملاذ المغلّفة بعناية، مع تغليف وتنسيق مخصص لأعياد الميلاد والخطوبة وكل المناسبات. اطلبي هديتك بسهولة عبر واتساب.",
-  homeTitle: "ملاذ للهدايا | بوكسات هدايا وتغليف أنيق لكل مناسبة",
+    "اكتشفي هدايا ملاذ وتوزيعات المدارس والحضانات، مع أدوات مدرسية مخصصة باسم وصورة الطفل وقصص تعليمية مرحة. تغليف أنيق لكل المناسبات وطلبات سهلة عبر واتساب.",
+  homeTitle: "ملاذ للهدايا | توزيعات مدرسية وهدايا مخصصة للأطفال",
   keywords: [
     "ملاذ للهدايا",
     "هدايا",
@@ -64,6 +65,10 @@ export const site = {
     "هدايا أعياد ميلاد",
     "هدايا خطوبة",
     "هدايا في مصر",
+    "توزيعات مدارس",
+    "توزيعات حضانات",
+    "أدوات مدرسية بالاسم والصورة",
+    "قصص تعليمية مخصصة للأطفال",
   ],
   url: process.env.NEXT_PUBLIC_SITE_URL ?? "https://malaz-gifts.pages.dev",
   links,
@@ -86,6 +91,7 @@ export const site = {
   navigation: [
     { label: "الرئيسية", href: links.home },
     { label: "التشكيلات", href: links.collections },
+    { label: "المدارس والحضانات", href: links.schoolGifts },
     { label: "المناسبات", href: links.occasions },
     { label: "لماذا ملاذ", href: links.why },
     { label: "تواصل معنا", href: links.contact },
@@ -109,6 +115,45 @@ export const site = {
   collectionsLabel: "تشكيلاتنا",
   placeholderCollectionImage: "[صورة من جروب الفيس]",
   collections,
+  schoolGifts: {
+    label: "فرحة التعلّم",
+    heading: "أنشطة وهدايا للمدارس والحضانات",
+    description:
+      "نحوّل أيام المدرسة والأنشطة إلى ذكريات لطيفة، بتوزيعات وهدايا مصممة خصيصًا للأطفال.",
+    imagePlaceholder: "[صورة توزيعات المدارس]",
+    items: [
+      {
+        title: "توزيعات المدارس والحضانات",
+        description:
+          "توزيعات أنيقة ولطيفة للأنشطة المدرسية، استقبال الأطفال، والحفلات والمناسبات.",
+        icon: "gift",
+      },
+      {
+        title: "أدوات التلميذ باسمه وصورته",
+        description:
+          "ننسّق أدوات وملصقات مدرسية مخصصة باسم الطفل وصورته لتكون أغراضه مميزة.",
+        icon: "star",
+      },
+      {
+        title: "قصص وكتب تعليمية مرحة",
+        description:
+          "قصص مصوّرة وأنشطة تعليمية يظهر فيها الطفل بطلًا، لتصبح القراءة والتعلّم أقرب لقلبه.",
+        icon: "heart",
+      },
+    ],
+    action: "اطلبي توزيعات مخصصة",
+  },
+  schoolStory: {
+    label: "كل مناسبة لها لمسة من ملاذ",
+    heading: "هدايا وتوزيعات تحكي حكايتكم",
+    paragraphs: [
+      "أهلًا بكم في ملاذ؛ مكانكم لأجمل الهدايا والتوزيعات المميزة، بتصميم راقٍ يناسب مناسباتكم.",
+      "من توزيعات المدارس والحضانات إلى هدية تحمل اسم الطفل وصورته، نهتم بالتفاصيل لنصنع ذكرى شخصية تبقى في القلب.",
+    ],
+    image: "/images/malaz-school-gifts.jpg",
+    imageAlt: "تصميم ملاذ للهدايا والتوزيعات للمناسبات والمدارس",
+    action: "احكي لنا فكرتك",
+  },
   featuredLabel: "الأكثر طلبًا",
   featuredHeading: "هدايا جاهزة للإهداء",
   customOrderLink: "اطلبي تنسيقًا خاصًا",
@@ -123,6 +168,7 @@ export const site = {
     "تخرج ونجاح",
     "عيد الأم",
     "شكر وتقدير",
+    "نشاط مدرسي أو حضانة",
   ],
   whyLabel: "لماذا ملاذ",
   whyHeading: "مكان تجدين فيه الهدية",
@@ -150,7 +196,7 @@ export const site = {
   contactPage: {
     pageTitle: "تواصلي مع ملاذ للهدايا | طلب هدايا عبر واتساب",
     metaDescription:
-      "تواصلي مع ملاذ للهدايا لطلب بوكس هدايا أو تنسيق هدية خاصة. أرسلي تفاصيل المناسبة وموعد التسليم وسنساعدك في تجهيزها.",
+      "تواصلي مع ملاذ للهدايا لطلب بوكس هدايا أو توزيعات مدارس مخصصة باسم وصورة الطفل. أرسلي تفاصيل فكرتك وموعد التسليم وسنساعدك في تجهيزها.",
     accessibilityLabel: "معلومات التواصل",
     heroLabel: "نسعد بخدمتك",
     heroHeading: "تواصلي معنا",
@@ -184,7 +230,12 @@ export const site = {
       "أسرع طريقة لطلب هديتك. أرسلي لنا فكرتك وسنتولى الباقي.",
     whatsappAction: "ابدئي المحادثة",
     details: [
-      { title: "الهاتف / واتساب", value: phoneDisplay, icon: "phone" },
+      {
+        title: "الهاتف / واتساب",
+        value: phoneDisplay,
+        icon: "phone",
+        href: `https://wa.me/${whatsappNumber}`,
+      },
       { title: "البريد الإلكتروني", value: email, icon: "mail" },
       { title: "مواعيد العمل", value: hours, icon: "clock" },
     ],
@@ -195,9 +246,7 @@ export const site = {
   quickLinksHeading: "روابط سريعة",
   socialHeading: "تابعينا",
   facebookGroupLabel: "جروب فيسبوك",
-  whatsappFooterLabel: whatsappNumber
-    ? `واتساب: ${whatsappNumber}`
-    : "واتساب: [رقم الواتساب]",
+  whatsappFooterLabel: `واتساب: ${phoneDisplay}`,
   copyright: "© ملاذ للهدايا — جميع الحقوق محفوظة",
   sectionTitle: {
     collections: "تشكيلاتنا",
@@ -207,7 +256,6 @@ export const site = {
   },
   footerLinks: [
     { label: "الرئيسية", href: links.home },
-    { label: "التشكيلات", href: links.collections },
     { label: "تواصل معنا", href: links.contact },
   ],
 } as const;

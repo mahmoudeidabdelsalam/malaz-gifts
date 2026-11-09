@@ -45,7 +45,16 @@ export function Footer() {
                 {site.facebookGroupLabel}
               </a>
             </li>
-            <li>{site.whatsappFooterLabel}</li>
+            <li>
+              <a
+                className="hover:text-white"
+                href={site.whatsappUrl}
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                {site.whatsappFooterLabel}
+              </a>
+            </li>
           </ul>
         </div>
       </div>
