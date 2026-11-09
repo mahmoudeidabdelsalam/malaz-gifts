@@ -1,13 +1,13 @@
+import Image from "next/image";
 import { Button } from "@/components/Button";
 import { Icon } from "@/components/Icon";
-import { Logo } from "@/components/Logo";
 import { site } from "@/lib/site";
 
 export function Hero() {
   return (
     <section className="hero-gradient overflow-hidden">
       <div className="page-shell grid items-center gap-10 py-14 md:grid-cols-2 md:gap-14 md:py-16 lg:py-[72px]">
-        <div className="order-1">
+        <div className="order-2">
           <div className="mb-5 inline-flex items-center gap-2 rounded-full border border-[#E6B96A] bg-white px-4 py-2 font-cairo text-sm font-bold text-gold-text">
             <Icon name="star" className="size-4" />
             {site.hero.badge}
@@ -28,10 +28,16 @@ export function Hero() {
             </Button>
           </div>
         </div>
-        <div className="order-2 mx-auto flex aspect-square w-full max-w-[460px] items-center justify-center rounded-full border-[6px] border-gold bg-white shadow-[0_30px_60px_rgba(138,74,104,.18)]">
-          <div className="flex size-[82%] items-center justify-center rounded-full border-2 border-gold/70">
-            <Logo />
-          </div>
+        <div className="order-1 mx-auto flex aspect-square w-full max-w-[460px] items-center justify-center rounded-full border-[6px] border-gold bg-white shadow-[0_30px_60px_rgba(138,74,104,.18)]">
+          <Image
+            alt={site.logoAlt}
+            className="size-[92%] rounded-full object-contain"
+            height={800}
+            priority
+            src={site.logoPath}
+            unoptimized
+            width={800}
+          />
         </div>
       </div>
     </section>

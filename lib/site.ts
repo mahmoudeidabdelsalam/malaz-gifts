@@ -63,7 +63,7 @@ export const site = {
   hours,
   facebookGroup: "https://www.facebook.com/groups/1060581723439619/",
   logoPath: "/logo.png",
-  logoAvailable: false,
+  logoAvailable: true,
   announcement: "اطلبي هديتك بسهولة عبر واتساب — تغليف أنيق بلمسة ملاذ",
   orderNowAction: "اطلب الآن",
   homeNavigationLabel: "التنقل الرئيسي",
