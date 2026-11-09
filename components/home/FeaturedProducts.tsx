@@ -37,17 +37,9 @@ export function FeaturedProducts() {
                   {product.tag}
                 </span>
               </div>
-              <div className="flex min-h-[82px] items-center justify-between gap-3 p-4">
-                <div>
-                  <h3 className="font-cairo text-sm font-bold text-plum-dark">
-                    {product.name}
-                  </h3>
-                  <p className="mt-2 font-cairo text-sm font-extrabold text-plum">
-                    {product.price} ج.م
-                  </p>
-                </div>
+              <div className="flex items-center justify-between gap-3 p-0">
                 <Button
-                  className="min-h-10 shrink-0 bg-rose px-4 py-2 text-sm text-[#3E1F2E] hover:bg-[#d97b75]"
+                  className="h-full shrink-0 w-full rounded-none bg-rose px-4 py-2 text-sm text-[#3E1F2E] hover:bg-[#d97b75]"
                   href={site.links.contact}
                 >
                   {site.orderAction}

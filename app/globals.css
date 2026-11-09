@@ -123,6 +123,10 @@ textarea {
   color: var(--white);
 }
 
+.primary-button.rounded-none {
+  border-radius: 0;
+}
+
 .primary-button:hover {
   background: var(--rose-deep);
   transform: translateY(-1px);

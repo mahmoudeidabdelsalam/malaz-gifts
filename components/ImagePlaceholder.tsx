@@ -21,7 +21,7 @@ export function ImagePlaceholder({
     return (
       <Image
         alt={alt}
-        className={`h-full w-full object-cover ${className}`}
+        className={`h-full w-full object-contain max-h-[340px] ${className}`}
         height={600}
         src={image}
         unoptimized

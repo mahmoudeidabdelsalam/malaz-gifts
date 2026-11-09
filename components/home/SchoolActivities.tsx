@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { Button } from "@/components/Button";
 import { Icon } from "@/components/Icon";
 import { SectionTitle } from "@/components/SectionTitle";
@@ -19,18 +20,27 @@ export function SchoolActivities() {
         <div className="mt-9 grid gap-5 md:grid-cols-3">
           {content.items.map((item) => (
             <article
-              className="soft-card flex flex-col items-start p-6"
+              className="soft-card flex flex-col items-start overflow-hidden"
               key={item.title}
             >
-              <span className="mb-4 inline-flex size-14 items-center justify-center rounded-2xl bg-blush-50 text-plum">
-                <Icon name={item.icon} className="size-7" />
-              </span>
-              <h3 className="font-cairo text-lg font-bold text-plum-dark">
-                {item.title}
-              </h3>
-              <p className="mt-3 flex-1 leading-7 text-body-muted">
-                {item.description}
-              </p>
+              <Image
+                alt={item.title}
+                className="max-h-[600px] w-full object-cover"
+                height={600}
+                src={item.image}
+                width={800}
+              />
+              <div className="flex flex-1 flex-col items-start p-6">
+                <span className="mb-4 inline-flex size-12 items-center justify-center rounded-2xl bg-blush-50 text-plum">
+                  <Icon name={item.icon} className="size-6" />
+                </span>
+                <h3 className="font-cairo text-lg font-bold text-plum-dark">
+                  {item.title}
+                </h3>
+                <p className="mt-3 flex-1 leading-7 text-body-muted">
+                  {item.description}
+                </p>
+              </div>
             </article>
           ))}
         </div>

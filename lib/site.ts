@@ -28,26 +28,50 @@ const collections: Collection[] = [
   {
     title: "بوكسات الهدايا",
     description: "تشكيلة متكاملة مغلّفة وجاهزة للإهداء.",
+    image: "/images/image-13.jpg",
   },
   {
     title: "هدايا الأحبة",
     description: "لمسات خاصة تعبّر عن مشاعرك.",
+    image: "/images/image-12.jpg",
   },
   {
     title: "هدايا المناسبات",
     description: "أعياد ميلاد وخطوبة وتخرج وأكثر.",
+    image: "/images/image-1.jpg",
   },
   {
     title: "تغليف وتنسيق",
     description: "نغلّف هديتك بأسلوب أنيق يشبهك.",
+    image: "/images/image-2.jpg",
   },
 ];
 
 const products: Product[] = [
-  { name: "[اسم المنتج الأول]", price: "[السعر]", tag: "الأكثر طلبًا" },
-  { name: "[اسم المنتج الثاني]", price: "[السعر]", tag: "جديد" },
-  { name: "[اسم المنتج الثالث]", price: "[السعر]", tag: "هدية مميزة" },
-  { name: "[اسم المنتج الرابع]", price: "[السعر]", tag: "جديد" },
+  {
+    tag: "الأكثر طلبًا",
+    image: "/images/image-1.jpg",
+    name: "",
+    price: ""
+  },
+  {
+    tag: "جديد",
+    image: "/images/image-2.jpg",
+        name: "",
+    price: ""
+  },
+  {
+    tag: "هدية مميزة",
+    image: "/images/image-12.jpg",
+        name: "",
+    price: ""
+  },
+  {
+    tag: "جديد",
+    image: "/images/image-13.jpg",
+        name: "",
+    price: ""
+  },
 ];
 
 export const site = {
@@ -127,18 +151,21 @@ export const site = {
         description:
           "توزيعات أنيقة ولطيفة للأنشطة المدرسية، استقبال الأطفال، والحفلات والمناسبات.",
         icon: "gift",
+        image: "/images/image-3.jpg",
       },
       {
         title: "أدوات التلميذ باسمه وصورته",
         description:
           "ننسّق أدوات وملصقات مدرسية مخصصة باسم الطفل وصورته لتكون أغراضه مميزة.",
         icon: "star",
+        image: "/images/image-5.jpg",
       },
       {
         title: "قصص وكتب تعليمية مرحة",
         description:
           "قصص مصوّرة وأنشطة تعليمية يظهر فيها الطفل بطلًا، لتصبح القراءة والتعلّم أقرب لقلبه.",
         icon: "heart",
+        image: "/images/image-11.jpg",
       },
     ],
     action: "اطلبي توزيعات مخصصة",
