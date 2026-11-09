@@ -1,7 +1,7 @@
 const whatsappNumber = process.env.NEXT_PUBLIC_WHATSAPP_NUMBER ?? "";
 const phoneDisplay = "[رقم الهاتف]";
-const email = "[البريد الإلكتروني]";
-const hours = "[أيام وساعات العمل]";
+const email = "digital.board.pro@gmail.com";
+const hours = "من 10 صباحًا حتى 10 مساءً، طوال أيام الأسبوع";
 const links = {
   home: "/",
   contact: "/contact/",
