@@ -65,7 +65,7 @@ export const site = {
     "هدايا خطوبة",
     "هدايا في مصر",
   ],
-  url: process.env.NEXT_PUBLIC_SITE_URL ?? "https://malaz.example.com",
+  url: process.env.NEXT_PUBLIC_SITE_URL ?? "https://malaz-gifts.pages.dev",
   links,
   whatsappNumber,
   whatsappUrl: `https://wa.me/${whatsappNumber}`,
