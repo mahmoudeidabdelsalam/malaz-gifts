@@ -246,7 +246,7 @@ export const site = {
   quickLinksHeading: "روابط سريعة",
   socialHeading: "تابعينا",
   facebookGroupLabel: "جروب فيسبوك",
-  whatsappFooterLabel: `واتساب: ${phoneDisplay}`,
+  whatsappFooterLabel: `واتساب ${phoneDisplay}`,
   copyright: "© ملاذ للهدايا — جميع الحقوق محفوظة",
   sectionTitle: {
     collections: "تشكيلاتنا",
