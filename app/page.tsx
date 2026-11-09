@@ -11,6 +11,7 @@ import { site } from "@/lib/site";
 export const metadata: Metadata = {
   title: site.homeTitle,
   description: site.description,
+  alternates: { canonical: site.links.home },
   openGraph: {
     title: site.homeTitle,
     description: site.description,
@@ -21,6 +22,12 @@ export const metadata: Metadata = {
     images: site.logoAvailable
       ? [{ url: site.logoPath, alt: site.logoAlt }]
       : undefined,
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: site.homeTitle,
+    description: site.description,
+    images: site.logoAvailable ? [site.logoPath] : undefined,
   },
 };
 

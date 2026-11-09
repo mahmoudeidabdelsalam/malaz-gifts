@@ -5,10 +5,12 @@ import { site } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: site.contactPage.pageTitle,
-  description: site.contactPage.heroDescription,
+  description: site.contactPage.metaDescription,
+  keywords: [...site.keywords],
+  alternates: { canonical: site.links.contact },
   openGraph: {
     title: site.contactPage.pageTitle,
-    description: site.contactPage.heroDescription,
+    description: site.contactPage.metaDescription,
     url: `${site.url}${site.links.contact}`,
     siteName: site.name,
     locale: "ar_EG",
@@ -16,6 +18,12 @@ export const metadata: Metadata = {
     images: site.logoAvailable
       ? [{ url: site.logoPath, alt: site.logoAlt }]
       : undefined,
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: site.contactPage.pageTitle,
+    description: site.contactPage.metaDescription,
+    images: site.logoAvailable ? [site.logoPath] : undefined,
   },
 };
 
