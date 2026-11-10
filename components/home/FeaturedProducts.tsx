@@ -25,7 +25,7 @@ export function FeaturedProducts() {
           {site.products.map((product) => (
             <article
               className="soft-card overflow-hidden"
-              key={product.name}
+              key={product.id}
             >
               <div className="relative">
                 <ImagePlaceholder

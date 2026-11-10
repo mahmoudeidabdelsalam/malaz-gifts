@@ -18,6 +18,7 @@ type Collection = {
 };
 
 type Product = {
+  id: string;
   name: string;
   price: string;
   tag: string;
@@ -49,24 +50,28 @@ const collections: Collection[] = [
 
 const products: Product[] = [
   {
+    id: "featured-1",
     tag: "الأكثر طلبًا",
     image: "/images/image-1.jpg",
     name: "",
     price: ""
   },
   {
+    id: "featured-2",
     tag: "جديد",
     image: "/images/image-2.jpg",
         name: "",
     price: ""
   },
   {
+    id: "featured-3",
     tag: "هدية مميزة",
     image: "/images/image-12.jpg",
         name: "",
     price: ""
   },
   {
+    id: "featured-4",
     tag: "جديد",
     image: "/images/image-13.jpg",
         name: "",
