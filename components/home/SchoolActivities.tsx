@@ -25,7 +25,7 @@ export function SchoolActivities() {
             >
               <Image
                 alt={item.title}
-                className="max-h-[600px] w-full object-cover"
+                className="max-h-[620px] w-full object-cover object-top"
                 height={600}
                 src={item.image}
                 width={800}
